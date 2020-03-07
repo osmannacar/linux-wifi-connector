@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/refresh.svg</file>
+        <file>img/wifi.png</file>
+    </qresource>
+</RCC>
