@@ -29,9 +29,8 @@ MainWindow::MainWindow(QWidget *parent)
     this->ui->btn_refresh->setToolTip("Refresh");
 
     this->ui->btn_refresh->setIcon(QIcon(QPixmap::fromImage(QImage(":/img/refresh.svg").scaled(this->ui->btn_refresh->size(), Qt::KeepAspectRatio, Qt::SmoothTransformation))));
-   QObject::connect(this->ui->btn_refresh, SIGNAL(clicked()), this, SLOT(findAvailableConnection()));
+    QObject::connect(this->ui->btn_refresh, SIGNAL(clicked()), this, SLOT(findAvailableConnection()));
     QObject::connect(this->ui->btn_wifi, SIGNAL(clickSwitch(bool)), this, SLOT(turnOnOrOFWifi(bool)));
-
 }
 
 MainWindow::~MainWindow()
